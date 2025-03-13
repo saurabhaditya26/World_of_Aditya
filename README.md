@@ -1,2 +1,2 @@
-# World_of_Aditya
+# World of Aditya
 Welcome to my world ✨
