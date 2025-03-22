@@ -1,2 +1,2 @@
-# World of Aditya
-Welcome to my world ✨
+# Universe of Aditya
+Welcome to my Universe✨
