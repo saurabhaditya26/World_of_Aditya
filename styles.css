@@ -1,0 +1,372 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+a {
+  text-decoration: none;
+  color: yellow;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007BFF;
+  color: #fff;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* Navigation Bar */
+nav {
+  background-image: url("bg.jpg");
+  background-size: contain;
+  color: #fff;
+  padding: 15px 0;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+nav .nav-links li a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+nav .nav-links li a:hover {
+  color: #007BFF;
+}
+
+/* Hero Section */
+.hero {
+  color: black;
+  background-color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+
+/* About Section */
+.about {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Projects Section */
+p_heading{
+  color:#63d5c7 ;
+}
+.projects {
+  padding: 50px 0;
+  background: #f4f4f4;
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  background-image: url('bg.jpg');
+  color:white;
+  border:0px;
+  border-radius:10px ;
+}
+
+.p_logo{
+  height: 60px;
+  width: 60px;
+  border: 0px;
+  border-radius: 10px;
+  position: absolute;
+  left:13px;
+  transform: rotate(20deg);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Skills Section */
+.skills {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skills-list li {
+  background: #007B;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.skills_logo{
+  height:70px;
+  width: auto;
+  position: absolute;
+  z-index: 5;
+}
+#html{
+  right: 5px;
+  transform: rotate(10deg);
+}
+#js{
+  left: 5px;
+  transform: rotate(-20deg);
+  border: 0px;
+  border-radius: 20px;
+}
+#py{
+  right:110px;
+  transform: rotate(0deg);
+}
+
+
+/* Social Media Section */
+.social-media {
+  padding: 50px 0;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.social-media h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.social-media p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.social-icon:hover {
+  background: #0056b3;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 0;
+  background: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact button {
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #0056b3;
+}
+
+/* Dark Mode Button Styles */
+    .dark-mode-button {
+      position: fixed; /* Sticky button */
+      bottom: 20px; /* Position at the bottom */
+      right: 20px; /* Position at the right */
+      background-color: #2c3e50; /* Dark blue-gray background */
+      color: #ecf0f1; /* Light text color */
+      border: none; /* No border */
+      padding: 10px 20px; /* Padding */
+      font-size: 16px; /* Font size */
+      font-weight: 600; /* Bold text */
+      border-radius: 25px; /* Rounded corners */
+      cursor: pointer; /* Pointer cursor */
+      display: flex; /* Flexbox for alignment */
+      align-items: center; /* Center items vertically */
+      gap: 10px; /* Space between icon and text */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+      transition: all 0.3s ease; /* Smooth transition */
+      z-index: 1000; /* Ensure it's always on top */
+    }
+
+    .dark-mode-button:hover {
+      background-color: #34495e; /* Slightly lighter on hover */
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    }
+
+    .dark-mode-button:active {
+      transform: scale(0.95); /* Slight shrink on click */
+    }
+
+    /* Dark Mode Styles */
+    body.dark-mode {
+      background-color: #121212; /* Dark background */
+      color: #ffffff; /* Light text */
+    }
+    body.dark-mode .social-media{
+      background: #1e1e1e;
+      color: white;
+    }
+    body.dark-mode .projects{
+      background: #2c2c2c;
+    }
+    body.dark-mode .project-card{
+      background: #191919;
+    }
+    body.dark-mode .hero{
+      background: #121212;
+      color: white;
+      
+    }
+    body.dark-mode .hero .container h1{
+      background: #121212;
+      color: white;
+    }
+    body.dark-mode .hero .container p{
+      color:white;
+    }
+
+    body.dark-mode .content {
+      background-color: #1e1e1e; /* Darker content background */
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+/* Footer */
+footer {
+  background: black;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#pl1{
+  height: 300px;
+  width: 300px;
+  position: relative;
+  bottom: 0px;
+}
+
+#astro1{
+  height: 70px;
+  width: 70px;
+  position: relative;
+  animation-name: astro_ani;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes astro_ani{
+  0% {bottom: 1px;}
+  50% {bottom: 20px;}
+  100% {bottom: 1px;}
+}
+
+/* 
+@Media{
+  max-width()
+} */
